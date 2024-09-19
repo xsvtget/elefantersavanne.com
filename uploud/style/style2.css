@@ -1,0 +1,218 @@
+body {
+    background: linear-gradient(to right, rgba(235, 232, 9, 0.59), rgba(226, 81, 33, 0.487));
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 0;
+}
+
+/* nav */
+.nav-container2 {
+    position: absolute;
+    margin: 0;
+    width: auto;
+}
+
+.topnavv {
+    display: inline-block;
+    overflow: hidden;
+    background-color: bisque;
+}
+
+
+
+.topnavv a {
+    float: left;
+    color: rgb(131, 12, 12);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+.topnavv a:hover {
+    background-color: rgb(131, 12, 12);
+    color: bisque;
+}
+
+.topnavv>.savanneelefant {
+    background-color: rgb(131, 12, 12);
+    color: bisque;
+}
+
+.input {
+    padding: 15px;
+
+}
+
+/* inneholder */
+
+.content{
+    padding-top: 60px;
+}
+
+/* tabel */
+
+table {
+    width: auto;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.069);
+}
+
+
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: rgb(131, 12, 12);
+    color: bisque;
+}
+
+.table-bilde {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.img-afr {
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+/* animation, section */
+header {
+    background-color: rgb(131, 12, 12);
+    color: bisque;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+    letter-spacing: 2px;
+    animation: fadeIn 2s ease;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    animation: fadeIn 3s ease;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to { opacity: 1;}
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(112, 10, 10);
+    padding: 15px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: bisque;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: rgb(216, 136, 136);
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+    padding: 40px;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.144);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    animation: slideIn 1s ease forwards;
+    opacity: 0;
+}
+section:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+section:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+section:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+section h2 {
+    margin-top: 0;
+    font-size: 1.8em;
+    color: rgb(112, 10, 10);
+}
+
+section p {
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+/* content del 2 (table-bilde) */
+
+.section1 {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    animation: slideIn 1s ease forwards;
+    opacity: 0;
+}
+
+.section1 h2 {
+    font-size: 2.0em;
+    color: black;
+    animation: slideIn 1.5s ease forwards;
+}
+
+.section1 table {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    animation: slideIn 2s ease;
+}
+
+.section1 .img-afr {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    animation: slideIn 2.5s ease;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(112, 10, 10);
+    color: bisque;
+    padding: 20px 0;
+    margin: 0;
+}
+

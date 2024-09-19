@@ -1,0 +1,119 @@
+body {
+    background-image:url("../images/savanne0.jpg") ;
+    background-size: cover;
+    min-height: 100dvh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 0;
+}
+
+
+
+/* bilde 1side */
+.hero-image {
+    width: 45%;
+    position: absolute;
+    top: 45%;
+    left: 48%;
+}
+
+.hero-text {
+    position: absolute;
+    top: 33%;
+    left: 15%;
+    width: 50%;
+    color: bisque;
+    text-shadow: 0 0 5px rgb(131, 12, 12), 0 0 5px #141478;
+    animation: herIn 3s ease;
+}
+
+.hero-header {
+    position: absolute;
+    right: 50%;
+    top: 20%;
+    font-size: 60px;
+    color: bisque;
+    text-shadow: 4px 4px rgb(131, 12, 12);
+    animation: herIn 2s ease;
+}
+
+@keyframes herIn {
+    from {opacity: 0;}
+    to { opacity: 1;}
+}
+
+.hero-btn {
+    font-size: 70px;
+    position: absolute;
+    left: 20%;
+    top: 45%;
+    background-color: bisque;
+    border: none;
+    color: rgb(131, 12, 12);
+    animation: btnIn 1s ease forwards;
+}
+
+@keyframes btnIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.hero-btn:hover {
+    background-color: rgb(131, 12, 12);
+    color: bisque;
+    border: bisque;
+}
+
+.bg-img {
+    background-image:url("../images/savanne0.jpg") ;
+    min-height: px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.nav-container {
+    position: absolute;
+    margin: 0;
+    width: auto;
+}
+
+.topnav{
+    display: inline-block;
+    overflow: hidden;
+    background-color: bisque;
+}
+
+.topnav a {
+    float: left;
+    color: rgb(131, 12, 12);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+.topnav a:hover {
+    background-color: rgb(131, 12, 12);
+    color: bisque;
+}
+
+.topnav>.home {
+    background-color: rgb(131, 12, 12);
+    color: bisque;
+}
+
+
+.input {
+    padding: 15px;
+    
+}
+

@@ -1,0 +1,120 @@
+body {
+    background: linear-gradient(100deg,rgb(66, 4, 44), rgb(167, 84, 7), rgb(66, 4, 44));
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: gradientAnimation 10s ease infinite;
+    background-size: 400% 400%;
+    margin: 0;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/* content */
+
+header h1 {
+    font-size: 5em;
+    margin-top: 100px;
+    letter-spacing: 2px;
+    color:  rgba(5, 2, 2, 0.664);
+    text-shadow: 2px 2px rgb(102, 19, 19);
+    text-align: center;
+    animation: fadeIn 2s ease;
+}
+
+
+section {
+    display: grid;
+    color: rgba(34, 2, 2, 0.73);
+    text-shadow: 0.5px 0.5px rgba(236, 126, 126, 0.543);
+    background-color: rgba(113, 113, 113, 0.08);
+    text-align: center;
+    animation: fadeIn 2s ease;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+
+.section1 {
+    display: inline-block;
+    block-size: auto;
+    margin-left: 42%;
+    color: rgba(255, 228, 196, 0.628);
+    background-color: rgba(238, 188, 246, 0.153);
+    border-radius: 10px;
+    animation: slideIn 2s ease forwards;
+    margin-top: 50px;
+}
+
+.vipps {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.img-vipps {
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+
+}
+
+.kort {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-kort {
+    width: 45px;
+    height: 45px;
+    padding-left: 15px;
+}
+
+.section2 {
+    display: inline-block;
+    block-size: auto;
+    margin-left: 38%;
+    color: rgba(255, 228, 196, 0.628);
+    background-color: rgba(238, 188, 246, 0.153) ;
+    margin-top: 0;
+    border-radius: 10px;
+    animation: slideIn 3s ease forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* footer */
+footer {
+    display: block;
+    text-align: center;
+    background-color: rgba(81, 8, 48, 0.447);
+    color: bisque;
+    padding: 20px 0;
+    margin-top: 400px;
+}
